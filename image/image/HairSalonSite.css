@@ -1,0 +1,291 @@
+@charset "UTF-8";
+body{
+  font-family: "メイリオ","Hiragino Kaku Gothic Pro", sans-serif;
+  margin:0;
+}
+/* ヘッダー ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+#header{
+  background-color: red;
+}
+
+.header-top{
+  background-color: gold;
+  margin:0 auto;
+}
+.header-top i{
+  font-size: 40px;
+  display: none;
+  padding:10px;
+  color:#660000;
+}
+
+.header-top ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+
+}
+.header-top_list{
+  padding:20px 25px;
+}
+.header-top_list a{
+  display: block;
+  text-decoration:none;
+  color:#333333;
+}
+
+.header-top_list a:hover{
+  opacity:0.7;
+}
+
+/* トップ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+#top{
+  background-color: green;
+  width:100%;
+  position:relative;
+}
+#top img{
+  width:100%;
+  opacity: 0.9;
+  vertical-align: middle;
+}
+
+.top-board{
+  background-color: rgba(46, 46, 46, 0.7);
+  width:500px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.top-board_title{
+  color:white;
+  text-align: center;
+}
+
+
+/*　内容　コンテンツ全体に適用＊＊＊＊＊＊＊＊＊＊＊＊ */
+.frame{
+  width:80%;
+  height:300px;
+  padding:40px;
+  margin:80px auto;
+  border:solid 1px black;
+  box-shadow:0px 0px 10px;
+}
+
+.frame h1{
+  margin:0;
+  text-align:center;
+  height:50px;
+}
+
+/* アバウト＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+#about{
+  background-color: yellow;
+}
+
+.about-circle{
+  background-color: pink;
+  height:250px;
+}
+
+.about-circle:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.about-box1{
+  float:left;
+  width:65%;
+  background-color: white;
+  height:190px;
+  line-height: 63px;
+  margin:30px 0px;
+}
+
+.about-box1 ul{
+  margin: 0;
+}
+
+.about-box2{
+  float:left;
+  width:35%;
+  background-color:lightblue;
+  height:100%;
+}
+
+.about-box2 img{
+  width:100%;
+  height:100%;
+}
+
+/* メニュー＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+#menu{
+  background-color: brown;
+}
+
+.menu-frame{
+  height:400px;
+}
+
+/*メニュー・３つ */
+.menu-circle{
+  background-color: purple;
+  height:345px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* メニュー・それぞれ */
+.menubox{
+  margin: 5px;
+  width:250px;
+  border:solid 1px #D2B48C;
+}
+
+.menu-box1{
+  background-color:silver;
+}
+
+.menu-cut{
+  float:left;
+  width:70%;
+}
+
+.menu-cut_price{
+  float:left;
+  width:30%;
+  text-align: center;
+}
+.menu-box2{
+  background-color:lightblue;
+}
+
+.menu-treatment{
+  float:left;
+  width:70%;
+}
+
+.menu-treatment_price{
+  float:left;
+  width:30%;
+  text-align: center;
+}
+
+.menu-box3{
+  background-color:white;
+}
+
+.menu-spa{
+  float:left;
+  width:70%;
+}
+
+.menu-spa_price{
+  float:left;
+  width:30%;
+  text-align: center;
+}
+
+#media{
+  background-color: orange;
+}
+
+#faqs{
+  background-color: lightblue;
+}
+
+#access{
+  background-color:purple;
+}
+
+#reservation{
+  background-color: lightgreen;
+}
+
+#footer{
+  background-color: pink;
+}
+
+/* レスポンシブ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+@media(max-width:425px){
+  #header{
+    height:60px;
+  }
+  .header-top i{
+    display:block;
+  }
+  .header-top ul{
+    display: none;
+  }
+  .header-top_list{
+    padding:5px;
+  }
+  .top-board{
+    width:250px;
+  }
+  .top-board_title{
+    font-size: 10px;
+  }
+  .frame{
+    padding:15px;
+    margin:30px auto;
+  }
+  .about-box1{
+    clear:left;
+    width:100%;
+    height:210px;
+    line-height:70px;
+    margin:20px 0px;
+    font-size: 12px;
+  }
+  .about-box2{
+    display: none;
+  }
+  .menu-circle{
+    display: block;
+  }
+}
+
+@media(min-width:426px) and (max-width:768px){
+  .header-top_list{
+    padding:15px;
+  }
+  .header-top i{
+    display:block;
+  }
+  .header-top ul{
+    display: none;
+  }
+  .frame{
+    margin:40px auto;
+  }
+  .menubox{
+    font-size: 13px;
+  }
+
+}
+
+@media(min-width:769px){
+
+}
+
+@media(min-width:1040px){
+  .header-top, #about, #menu, #media, #faqs, #access, #reservation{
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+}

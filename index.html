@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang=ja dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HairSalonSite</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="HairSalonSite.css">
+    <!--フォントのダウンロード  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <!-- fontawesome　CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/solid.css" integrity="sha384-LA8Ug4T/nhVkyhrSmSirsoAo9iDrBk8E7U80aSPeD+w3vO8PzOJIS6agGcbIwwX0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/brands.css" integrity="sha384-V5Z1KgRRJyY878qCx7+zUeTDm0FgjoYrbmSortFqRPGz+Ue6XDe4uIiMqB3tB/wd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/fontawesome.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+    <!-- Google map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBgk0ma9SiwATBPnUjYDBKR0og_BssHZs&callback=initMap"
+    type="text/javascript" async defer></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  </head>
+<body>
+
+<div id="header">
+  <div class="header-top">
+    <div class="header-top-bar">
+      <i class="fas fa-kiwi-bird"></i>
+      <div class="burgermenu">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+
+      <ul class="header-ul">
+        <div class="header-top_list Top">
+          <li>
+            <a href="#">TOP</a>
+          </li>
+        </div>
+        <div class="header-top_list Concept">
+          <li>
+            <a href="#">CONCEPT</a>
+          </li>
+        </div>
+        <div class="header-top_list Menu">
+          <li>
+            <a href="#">MENU</a>
+          </li>
+        </div>
+        <div class="header-top_list Media">
+          <li>
+            <a href="#">MEDIA</a>
+          </li>
+        </div>
+        <div class="header-top_list FAQs">
+          <li>
+            <a href="#">FAQs</a>
+          </li>
+        </div>
+        <div class="header-top_list Access">
+          <li>
+            <a href="#">ACCESS</a>
+          </li>
+        </div>
+        <div class="header-top_list Reservation">
+          <li>
+            <a href="#">RESERVATION</a>
+          </li>
+        </div>
+      </ul>
+
+  </div>
+</div>
+
+<!-- トップ -->
+<div id="top">
+  <img src="image/hairtop1.jpg" alt="hairtop1">
+  <div class="top-board">
+    <div class="top-board_title">
+        <h1>GoNatural Salon</h1>
+        <h3>最高の髪質改善とリラクゼーションをあなたに。</h3>
+        <div class="">
+
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- アバウト -->
+<div id="about" class="box">
+  <div class="frame about-frame">
+    <h1>About</h1>
+    <div class="about-circle">
+      <div class="about-box1">
+        <ul>
+          <div class="about-box1_list">
+            <li>常にシンプルなデザインを追及します。</li>
+          </div>
+          <div class="about-box1_list">
+            <li>本来の髪の美しさを大切にします。</li>
+          </div>
+          <div class="about-box1_list">
+            <li>快適さと貴方らしさを自然に表現します。</li>
+          </div>
+        </ul>
+      </div>
+      <div class="about-box2">
+        <img src="image/aboutbox3.jpg" alt="aboutbox3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- メニュー -->
+<div id="menu" class="box">
+  <div class="frame menu-frame">
+    <h1>Menu</h1>
+    <div class="menu-circle">
+      <!-- メニュー・ボックス１ -->
+      <div class="menubox menu-box1 ">
+         <div class="menu-title">
+            <div class="cut">
+              カット
+            </div>
+            <div class="cut">
+              カット（学生）
+            </div>
+            <div class="cut">
+              カラー
+            </div>
+            <div class="cut">
+              イルミナカラー
+            </div>
+            <div class="cut">
+              ケアブリーチ
+            </div>
+            <div class="cut">
+              ハイライト
+            </div>
+        </div>
+        <div class="menu-price">
+            <div class="cutprice">
+              5000円
+            </div>
+            <div class="cutprice">
+              3000円
+            </div>
+            <div class="cutprice">
+              6000円
+            </div>
+            <div class="cutprice">
+              8000円
+            </div>
+            <div class="cutprice">
+              6000円
+            </div>
+            <div class="cutprice">
+              8000円
+            </div>
+        </div>
+      </div>
+
+      <!-- メニュー・ボックス２ -->
+      <div class="menubox menu-box2">
+        <div class="menu-title">
+            <div class="treatment">
+              トリートメント
+            </div>
+            <div class="treatment">
+              Aujua
+            </div>
+            <div class="treatment">
+              TOKIO
+            </div>
+            <div class="treatment">
+              サイエンスアクア
+            </div>
+            <div class="treatment">
+              酸熱トリートメント
+            </div>
+        </div>
+        <div class="menu-price">
+            <div class="treatmentprice">
+              4000円
+            </div>
+            <div class="treatmentprice">
+              7000円
+            </div>
+            <div class="treatmentprice">
+              4000円
+            </div>
+            <div class="treatmentprice">
+              7000円
+            </div>
+            <div class="treatmentprice">
+              10000円
+            </div>
+        </div>
+      </div>
+      <!-- メニュー・ボックス３ -->
+      <div class="menubox menu-box3">
+        <div class="menu-title">
+            <div class="spa">
+              ヘッドスパ20分
+            </div>
+            <div class="spa">
+              ヘッドスパ Full
+            </div>
+            <div class="spa">
+              クレンジング
+            </div>
+            <div class="spa">
+              ヘアセット
+            </div>
+        </div>
+        <div class="menu-price">
+            <div class="spaprice">
+              4000円
+            </div>
+            <div class="spaprice">
+              8000円
+            </div>
+            <div class="spaprice">
+              3000円
+            </div>
+            <div class="spaprice">
+              4000円
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- メディア -->
+<div id="media" class="box">
+  <div class="frame media-frame">
+    <h1>Media</h1>
+    <div class="media-circle">
+      <div class="media-news news-index1">
+        <div class="news1 media-date">
+          2021.03.05
+        </div>
+        <div class="news1 media-pic">
+          <img src="image/mediapic1.jpeg" alt="media1">
+        </div>
+        <div class="news1 media-content">
+          雑誌◯◯◯３月号に掲載されました！
+        </div>
+      </div>
+      <div class="media-news news-index2">
+        <div class="news2 media-date">
+          2021.04.10
+        </div>
+        <div class="news2 media-pic">
+          <img src="image/mediapic2.jpeg" alt="media1">
+        </div>
+        <div class="news2 media-content">
+          雑誌▽▽▽４月号に掲載されました！
+        </div>
+      </div>
+      <div class="media-news news-index3">
+        <div class="news3 media-date">
+          2021.06.19
+        </div>
+        <div class="news3 media-pic">
+          <img src="image/mediapic3.jpeg" alt="media1">
+        </div>
+        <div class="news3 media-content">
+          雑誌□□□6月号に掲載されました！
+        </div>
+      </div>
+
+        <div class="more-button">
+            <a href="#">MORE 〉</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQs -->
+<div id="faqs" class="box">
+  <div class="frame faqs-frame">
+    <h1>FAQs</h1>
+      <div class="faqs-circle">
+        <div class="question">
+          <div class="question-box">
+            Q.予約制ですか？
+          </div>
+        </div>
+        <div class="answer">
+          <div class="answer-box">
+            A.予約優先制になっておりますが、お席が空いていればいつでも来院可能です！どうぞお電話<a href="#">03-9876-1234</a>へお問い合わせください。
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-box">
+              Q.クーポンチケットは使えますか？
+          </div>
+        </div>
+        <div class="answer">
+          <div class="answer-box">
+            A.１回の来院につき3000円分まで御利用いただけます。
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-box">
+            Q.無料wifiは使えますか？
+          </div>
+        </div>
+        <div class="answer">
+          <div class="answer-box">
+            A.店内にはfree wifiを設置しております。御利用ください。
+          </div>
+        </div>
+      </div>
+
+      <div class="more-button ">
+          <a href="#">MORE 〉</a>
+      </div>
+  </div>
+</div>
+
+<!-- アクセス -->
+<div id="access" class="box">
+  <div class="frame access-frame">
+    <h1>Access</h1>
+    <div class="access-circle">
+      <div id="access-map"></div>
+
+      <div class="access-adress">
+        <div class="access-details">
+          <p>〒234-5678　東京都小川区小川2-3-4 小川ビル1F</p></br>
+          <p>03-9876-1234</p>
+          <p>営業時間：10:00~20:00</p>
+          <p>定休日：火曜日・木曜日</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- リザベーション -->
+<div id="reservation" class="box">
+  <div class="frame reservation-frame">
+    <h1>Reservation</h1>
+      <div class="reservation-circle">
+          <!-- フォーム -->
+          <div class="form-circle">
+            <form action="xxx.html" method="get" name="mail_form">
+              <label class="form-index">お名前：</label></br>
+              <input class="form-menu formname" type="text" name="name" placeholder="小川　キャロル"></br>
+              <label class="form-index">メールアドレス：</label></br>
+              <input class="form-menu formmail" type="text" name="mail" placeholder="xxxx@adress.com"></br>
+              <label class="form-index">電話番号：</label></br>
+              <input class="form-menu formtel" type="number" name="tel" placeholder="08033335555(ハイフンなし)" value=""></br>
+
+              <label class="form-index">希望日：</label></br>
+              <input class="form-menu monthdate" type="date" name="day" value=""></br>
+
+              <label class="form-index">希望時間帯：</label></br>
+              <input class="selecttime" type="radio" name="example" value="10:00~">10:00~</br>
+              <input class="selecttime" type="radio" name="example" value="12:00~">12:00~</br>
+              <input class="selecttime" type="radio" name="example" value="14:00~">14:00~</br>
+              <input class="selecttime" type="radio" name="example" value="16:00~">16:00~</br>
+              <input class="selecttime" type="radio" name="example" value="18:00~">18:00~</br>
+              <input class="selecttime" type="radio" name="example" value="20:00~">20:00~</br>
+              </br>
+
+              <label class="form-index">メニュー・ご相談内容：</label></br>
+              <textarea class="form-menu consultation" placeholder="自然な艶のある髪質になりたい。">
+              </textarea></br>
+
+                <!--確認ボタン  -->
+              <div class="more-button">
+                  <input type="submit"
+                        class="submit-button"
+                        formaction=""
+                        value="Confirm 〉">
+              </div>
+            </form>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<!-- フッター -->
+<div id="footer">
+  <div class="footer-top">
+    <div class="footer-left">
+      <div class="footer-circle_left">
+        <div class="footer-left_icons">
+          <div class="icons icons-twitter">
+            <i class="fab fa-twitter-square"></i>
+          </div>
+          <div class="icons icons-instagram">
+            <i class="fab fa-instagram-square"></i>
+          </div>
+          <div class="icons icons-facebook">
+            <i class="fab fa-facebook-square"></i>
+          </div>
+
+        </div>
+        <div class="footer-left_menus">
+          <div class="footermenu menu-left">
+            <div class="minimenu">
+              <a href="#">TOP</a>
+            </div>
+            <div class="minimenu">
+              <a href="#">CONCEPT</a>
+            </div>
+            <div class="minimenu">
+              <a href="#">MENU</a>
+            </div>
+            <div class="minimenu">
+              <a href="#">MEDIA</a>
+            </div>
+          </div>
+          <div class="footermenu menu-right">
+            <div class="minimenu">
+              <a href="#">FAQs</a>
+            </div>
+            <div class="minimenu">
+              <a href="#">ACCESS</a>
+            </div>
+            <div class="minimenu">
+              <a href="#">RESEVATION</a>
+            </div>
+            <div class="minimenu">
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-right">
+      <div class="footer-circle_right">
+        <i class="fas fa-kiwi-bird"></i>
+        GoNatural Salon
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    copyright &copy; ogawagonaturalsalon.All right reserverd.
+  </div>
+</div>
+
+
+    <script type="text/javascript" src="HairSalonSite.js"></script>
+
+</body>
+</html>
